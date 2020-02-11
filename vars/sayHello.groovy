@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(String name = 'human') {
-  echo "Hello, ${name}."
+def call(Map config) {
+  git url: "https://github.com/david-heeps/${config.name}-worldpub"
 }
 
