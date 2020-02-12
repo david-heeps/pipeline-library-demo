@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def call(def config, def config2) {
+def call(Map config, Map config2) {
   git url: "https://github.com/david-heeps/${config.name}-worldpub"
   sh './jtest.sh'
   
